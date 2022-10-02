@@ -7,6 +7,8 @@
 fn main() {
     let vec0 = Vec::new();
 
+    make_copy(vec0);
+
     let mut vec1 = fill_vec(vec0);
 
     // Do not change the following line!
@@ -24,5 +26,9 @@ fn fill_vec(vec: Vec<i32>) -> Vec<i32> {
     vec.push(44);
     vec.push(66);
 
+    vec
+}
+
+fn make_copy(vec: Vec<i32>) -> Vec<i32> {
     vec
 }
